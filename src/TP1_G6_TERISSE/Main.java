@@ -1,4 +1,4 @@
-package tp1;
+package TP1_G6_TERISSE;
 import java.util.Scanner;
 
 public class Main {
