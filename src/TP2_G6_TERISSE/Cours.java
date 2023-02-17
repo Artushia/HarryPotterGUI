@@ -3,9 +3,9 @@ package TP2_G6_TERISSE;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Main {
+public class Cours {
     public static void main(String[] args) {
-        System.out.println(isBinarySumInArray2(new int[]{3, 5, 7, 15, 26, 31}, 33));
+        //System.out.println(isBinarySumInArray2(new int[]{3, 5, 7, 15, 26, 31}, 33));
     }
 
     /*
