@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="fnode" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.java.isep.Controller.Scene4">
+   <children>
+      <ImageView fitHeight="554.0" fitWidth="822.0" opacity="0.75">
+         <image>
+            <Image url="@../../../images/castle.jpg" />
+         </image>
+      </ImageView>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="822.0">
+         <children>
+            <Label fx:id="endphrase" layoutX="181.0" layoutY="167.0" prefHeight="219.0" prefWidth="546.0" text="End of the game phrase" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="47.0" />
+               </font>
+            </Label>
+            <Text fill="#fffefe" layoutX="197.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you for playing Harry Potter at home !">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="#fffefe" layoutX="291.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created by Arthur Terisse">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
