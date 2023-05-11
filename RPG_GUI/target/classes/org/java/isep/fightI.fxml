@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.java.isep.Controller.Scene3">
+   <ImageView fitHeight="554.0" fitWidth="822.0">
+      <image>
+         <Image url="@../../../images/background.jpg" />
+      </image>
+   </ImageView>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/19">
+   <children>
+         <ImageView fitHeight="136.0" fitWidth="387.0" layoutX="406.0" layoutY="26.0">
+            <image>
+               <Image url="@../../../images/ardoise.png" />
+            </image>
+         </ImageView>
+      <Text fill="WHITE" layoutX="542.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR WIZARD">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Text>
+         <Label fx:id="wizName" layoutX="97.0" layoutY="63.0" prefHeight="31.0" prefWidth="240.0" text="Your name">
+            <font>
+               <Font name="Book Antiqua Bold Italic" size="25.0" />
+            </font>
+         </Label>
+         <Label fx:id="wandSize" layoutX="422.0" layoutY="56.0" prefHeight="22.0" prefWidth="354.0" text="Wand size" textFill="WHITE">
+            <font>
+               <Font name="Book Antiqua" size="15.0" />
+            </font>
+         </Label>
+         <Label fx:id="coreLabel" layoutX="422.0" layoutY="81.0" prefHeight="22.0" prefWidth="354.0" text="Core name" textFill="#f5f5f5">
+            <font>
+               <Font name="Book Antiqua" size="15.0" />
+            </font>
+         </Label>
+         <Label fx:id="houseLabel" layoutX="422.0" layoutY="103.0" prefHeight="22.0" prefWidth="354.0" text="House" textFill="#f2f2f2">
+            <font>
+               <Font name="Book Antiqua" size="15.0" />
+            </font>
+         </Label>
+         <Label fx:id="petLabel" layoutX="423.0" layoutY="131.0" text="Pet" textFill="WHITE">
+            <font>
+               <Font name="Book Antiqua" size="15.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="200.0" fitWidth="118.0" layoutX="575.0" layoutY="331.0" nodeOrientation="RIGHT_TO_LEFT">
+            <image>
+               <Image url="@../../../images/troll.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="200.0" fitWidth="164.0" layoutX="108.0" layoutY="331.0">
+            <image>
+               <Image url="@../../../images/harrypotter.png" />
+            </image>
+         </ImageView>
+         <Button layoutX="369.0" layoutY="431.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="107.0" text="Attack" onAction="#attackButton">
+            <font>
+               <Font name="Book Antiqua Bold Italic" size="21.0" />
+            </font>
+         </Button>
+         <ImageView fitHeight="187.0" fitWidth="190.0" layoutX="457.0" layoutY="183.0">
+            <image>
+               <Image url="@../../../images/buble.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="187.0" fitWidth="190.0" layoutX="177.0" layoutY="183.0" nodeOrientation="RIGHT_TO_LEFT">
+            <image>
+               <Image url="@../../../images/buble.png" />
+            </image>
+         </ImageView>
+         <Label fx:id="damage1" layoutX="226.0" layoutY="233.0" prefHeight="60.0" prefWidth="125.0" text="Damage done">
+            <font>
+               <Font name="Book Antiqua" size="15.0" />
+            </font>
+         </Label>
+         <Label fx:id="damage2" layoutX="505.0" layoutY="233.0" prefHeight="60.0" prefWidth="125.0" text="Damage done">
+            <font>
+               <Font name="Book Antiqua" size="15.0" />
+            </font>
+         </Label>
+         <Label fx:id="wizardlifepoints" layoutX="194.0" layoutY="316.0" prefHeight="31.0" prefWidth="64.0" text="hp1" textAlignment="CENTER">
+            <font>
+               <Font name="Book Antiqua" size="15.0" />
+            </font>
+         </Label>
+         <Label fx:id="trolllifepoints" layoutX="615.0" layoutY="304.0" prefHeight="31.0" prefWidth="64.0" text="hp2" textAlignment="CENTER">
+            <font>
+               <Font name="Book Antiqua" size="15.0" />
+            </font>
+         </Label>
+   </children>
+</Pane>
+</AnchorPane>

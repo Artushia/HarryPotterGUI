@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="gluonhq.charm.down.android" type="repository">
+    <properties maven-id="com.gluonhq:charm-down-android:2.0.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gluonhq/charm-down-android/2.0.1/charm-down-android-2.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/gluonhq/charm-down-common/2.0.1/charm-down-common-2.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/zxing/core/3.2.1/core-3.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/javafxports/jfxdvk/8.60.6/jfxdvk-8.60.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

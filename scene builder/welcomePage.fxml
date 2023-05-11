@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="598.0" fitWidth="830.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/seamless-paper-texture.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="180.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Harry Potter at Home !  ">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="296.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This game was created by Arthur Terisse">
+         <font>
+            <Font name="Book Antiqua Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rules : ">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="131.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" - This is an RPG game. ">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="133.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- You will start by choosing your character's traits">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="133.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Then, you will fight a boss at each level.">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="133.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- As long as you win, you get to continue your journey.">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="133.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- You win when you reach the 7th level and beat the boss.">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="133.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- After each win, you can choose to increase your damage or your  hp.">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have Fun ! ">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="196.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <BottomNavigationButton layoutX="278.0" layoutY="374.0" prefHeight="56.0" prefWidth="110.0" style="-fx-background-color: grey;" text="Start">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="32.0" />
+         </font>
+      </BottomNavigationButton>
+      <Text layoutX="405.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to begin playing !">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="27.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
