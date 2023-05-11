@@ -3,7 +3,11 @@ package org.java.isep.Controller;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import org.java.isep.Controller.Scene2;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -56,18 +60,6 @@ public class Scene3 {
         petLabel.setText("Pet : " + petname);
     }
 
-    public void attackLogic(Wizard wizard, Enemy enemy) throws IOException {
-        //Make a buble display number of damage
-
-
-        //wizard attacks enemy
-        attack(enemy, wizard.getKnownSpells().get(0));
-
-        //enemy fights back if he has lives
-        if (enemy.getHp() > 0) {
-            attack(wizard, enemy.getSpell());
-        }
-    }
     //import wizard
     FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/java/isep/character-traits.fxml"));
     Parent root = loader.load();
@@ -94,7 +86,7 @@ public class Scene3 {
         return character.getHp() > 0;
     }
 
-    private void syncFight(Wizard wizard, Enemy enemy) {
+    private void syncFight(Wizard wizard, Enemy enemy) throws IOException {
 
         if (isAlive(wizard) && isAlive(enemy)) {
 
@@ -106,16 +98,35 @@ public class Scene3 {
                 attack(wizard, enemy.getSpell());
                 displayAttackDamage2(troll.getSpell().getDamage());
                 displayHealthPoints2(wizard.getHp());
+            } else {
+                redirectToGameOverScene("WIN");
             }
+        } else {
+            redirectToGameOverScene("LOST");
         }
-
 
     }
 
-    public void attackButton(ActionEvent event) {
+    private void redirectToGameOverScene(String state) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/java/isep/final-page.fxml"));
+        Parent root = loader.load();
+        Scene finalscene = new Scene(root);
+
+        Stage currentStage = (Stage) wizName.getScene().getWindow();
+        currentStage.setScene(finalscene);
+        currentStage.show();
+
+        //Modifies label on last page
+        Scene4 finalpage = loader.getController();
+        finalpage.displayEndMessage(state);
+    }
+
+    //Method sync to attack button
+    public void attackButton(ActionEvent event) throws IOException {
         syncFight(fighter, troll);
     }
 
+    //Method for displaying text
     public void displayAttackDamage1(int damage) {damage1.setText("You lost " + damage + " hp");}
     public void displayAttackDamage2(int damage) {damage2.setText("You lost " + damage + " hp");}
     public void displayHealthPoints1(int health) {wizardlifepoints.setText("❤" +" "+ health);}
