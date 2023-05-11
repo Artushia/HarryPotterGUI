@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.java.isep.Controller.Scene3">
-   <ImageView fitHeight="554.0" fitWidth="822.0">
+   <ImageView fitHeight="554.0" fitWidth="822.0" opacity="0.75">
       <image>
          <Image url="@../../../images/castle.jpg" />
       </image>
