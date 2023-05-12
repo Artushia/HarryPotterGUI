@@ -35,7 +35,7 @@ public class Wizard extends Character {
     public Wizard(int hp) {
         super(hp);
 
-        Spell Leviosa = new Spell("Wanguardium Leviosa", 0.85, 20);
+        Spell Leviosa = new Spell("Wanguardium Leviosa", 0.25, 20);
         knownSpells.add(Leviosa);
     }
 }

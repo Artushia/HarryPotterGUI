@@ -66,7 +66,6 @@ public class Scene3 {
 
     //Imports main character
     Scene2 scene2Controller = loader.getController();
-
     Wizard fighter = scene2Controller.wizard;
     Enemy troll = scene2Controller.troll;
 
@@ -87,23 +86,29 @@ public class Scene3 {
     }
 
     private void syncFight(Wizard wizard, Enemy enemy) throws IOException {
-
-        if (isAlive(wizard) && isAlive(enemy)) {
-
-            attack(enemy, wizard.getKnownSpells().get(0));
-            displayAttackDamage1(wizard.getKnownSpells().get(0).getDamage());
-            displayHealthPoints1(enemy.getHp());
-            //enemy fights back if he has lives
-            if (enemy.getHp() > 0) {
-                attack(wizard, enemy.getSpell());
-                displayAttackDamage2(troll.getSpell().getDamage());
-                displayHealthPoints2(wizard.getHp());
-            } else {
-                redirectToGameOverScene("WIN");
-            }
+        int wizHealthBeforeAttack = wizard.getHp();
+        int trollHealthBeforeAttack = troll.getHp();
+        displayHealthPoints1(wizHealthBeforeAttack);
+        displayHealthPoints2(trollHealthBeforeAttack);
+        if (isAlive(wizard)) {
+                attack(enemy, wizard.getKnownSpells().get(0));
+                displayAttackDamage1(trollHealthBeforeAttack - enemy.getHp());
         } else {
             redirectToGameOverScene("LOST");
         }
+
+        //enemy fights back if he has lives
+        if (isAlive(enemy)) {
+            attack(wizard, enemy.getSpell());
+            if (wizard.getHp() <= 0) {
+                redirectToGameOverScene("LOST");
+            } else {
+            displayAttackDamage2(wizHealthBeforeAttack - wizard.getHp());}
+        } else {
+            redirectToGameOverScene("WIN");
+        }
+        displayHealthPoints1(wizard.getHp());
+        displayHealthPoints2(troll.getHp());
 
     }
 

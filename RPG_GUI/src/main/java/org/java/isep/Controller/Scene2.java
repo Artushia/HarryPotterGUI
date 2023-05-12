@@ -26,11 +26,11 @@ public class Scene2 {
     SortingHat sortingHat = new SortingHat();
     House house = sortingHat.pickHouse();
     Wizard wizard = new Wizard(100);
-    Spell enemySpell = new Spell("TrollSpell", 0.95, 20);
+    Spell enemySpell = new Spell("TrollSpell", 0.99, 20);
     Enemy troll = new Enemy("Troll", 100, enemySpell);
 
     @FXML
-    private void getWizardInfo(ActionEvent event) throws IOException {
+    private void getWizardInfo(ActionEvent event) throws IOException, NumberFormatException {
 
         String username = nameField.getText();
         int wandLength = Integer.parseInt(wandSize.getText());
@@ -56,7 +56,10 @@ public class Scene2 {
         Scene scene2 = new Scene(root);
         stage.setScene(scene2);
         stage.show();
+
+
     }
+
 
     public void instantiateWizard(Wizard wizard, String username, String house, String pet, String core, int wandLength) {
         wizard.setName(username);
